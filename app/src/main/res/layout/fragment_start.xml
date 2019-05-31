@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_begin="@dimen/payee_guideline"
+                android:id="@+id/guideline3"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline4"
+                app:layout_constraintGuide_end="@dimen/payee_guideline"/>
+
+        <com.google.android.material.button.MaterialButton
+                style="@style/PayeeDefaultButton"
+                android:layout_width="wrap_content"
+                app:icon="@drawable/ic_withdraw"
+                android:id="@+id/withdraw"
+                android:text="@string/withdraw"
+                android:background="@null"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"/>
+
+        <com.google.android.material.button.MaterialButton
+                style="@style/PayeeDefaultButton"
+                android:layout_width="wrap_content"
+                app:icon="@drawable/ic_money"
+                android:id="@+id/check_balance"
+                android:text="@string/check_balance"
+                android:background="@null"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

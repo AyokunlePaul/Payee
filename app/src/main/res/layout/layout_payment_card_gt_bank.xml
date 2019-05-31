@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="com.ayokunlepaul.payee.BankUtils"/>
+        <variable name="ATMCard" type="com.ayokunlepaul.payee.core.repository.entities.ATMCard"/>
+    </data>
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            app:cardBackgroundColor="@color/orange"
+            app:cardCornerRadius="10dp"
+            app:contentPadding="10dp"
+            app:cardElevation="5dp"
+            android:layout_margin="10dp"
+            app:rippleColor="@android:color/darker_gray">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent">
+
+                <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_gtbank"
+                        android:scaleType="fitCenter"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:id="@+id/imageView"/>
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:text="@{BankUtils.formatCardNumber(ATMCard.cardNumber)}"
+                        app:autoSizeTextType="uniform"
+                        tools:text="1234 5678 8901 26379"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView"
+                        android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" android:id="@+id/textView"/>
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent"
+                          app:layout_constraintStart_toStartOf="parent"
+                          app:layout_constraintHorizontal_bias="0.0"
+                          app:layout_constraintTop_toBottomOf="@+id/textView"
+                          tools:text="RUTH OGUNMAKINJU OMOWUMI"
+                          android:text="@{ATMCard.cardHolderName}"
+                          app:autoSizeTextType="uniform"
+                          android:gravity="center"
+                          android:textAllCaps="true"
+                          android:textSize="20sp"
+                          android:textColor="@android:color/white"
+                          android:layout_marginTop="16dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorOnPrimary">@color/colorAccent</item>
+        <item name="colorOnSecondary">@color/colorAccent</item>
+    </style>
+
+    <style name="PayeeCard" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="PayeeDefaultButton" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/payee_button_size</item>
+        <item name="iconGravity">start</item>
+        <item name="iconSize">@dimen/payee_button_icon_size</item>
+        <item name="iconTint">@color/colorPrimary</item>
+        <item name="rippleColor">@android:color/darker_gray</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>

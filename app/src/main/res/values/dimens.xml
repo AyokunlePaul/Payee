@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="payee_button_size">15sp</dimen>
+    <dimen name="payee_button_icon_size">30sp</dimen>
+    <dimen name="payee_guideline">24dp</dimen>
+</resources>

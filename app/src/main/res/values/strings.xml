@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Payee</string>
+    <string name="withdraw">WITHDRAW</string>
+    <string name="check_balance">CHECK BALANCE</string>
+    <string name="insert_card">INSERT CARD</string>
+    <string name="pin_dialog_title">ENTER YOUR PIN</string>
+    <string name="confirm_pin">CONFIRM PIN</string>
+    <string name="back">BACK</string>
+    <string name="inquiry">INQUIRY</string>
+    <string name="card_holder">Card Holder</string>
+    <string name="card_number">Card Number</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="my_cards">My Cards</string>
+    <string name="add">Add</string>
+    <string name="cash_500">₦500</string>
+    <string name="cash_1000">₦1000</string>
+    <string name="cash_2000">₦2000</string>
+    <string name="cash_5000">₦5000</string>
+    <string name="cash_10000">₦10000</string>
+    <string name="cash_20000">₦20000</string>
+    <string name="ok">OK</string>
+</resources>

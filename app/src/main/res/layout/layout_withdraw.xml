@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_begin="@dimen/payee_guideline"
+                android:id="@+id/guideline3"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline4"
+                app:layout_constraintGuide_end="@dimen/payee_guideline"/>
+
+        <com.google.android.material.button.MaterialButton
+                style="@style/PayeeDefaultButton"
+                android:layout_width="wrap_content"
+                android:text="@string/cash_500"
+                android:textSize="20sp"
+                android:background="@null"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline3"
+                app:layout_constraintVertical_chainStyle="packed"
+                android:id="@+id/withdraw_500"
+                app:layout_constraintBottom_toTopOf="@+id/withdraw_1000"/>
+
+        <com.google.android.material.button.MaterialButton
+                style="@style/PayeeDefaultButton"
+                android:layout_width="wrap_content"
+                android:text="@string/cash_1000"
+                android:textSize="20sp"
+                android:background="@null"
+                app:layout_constraintStart_toStartOf="@id/guideline3"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/withdraw_500"
+                android:layout_height="wrap_content" android:id="@+id/withdraw_1000"
+                app:layout_constraintBottom_toTopOf="@+id/withdraw_2000"/>
+
+        <com.google.android.material.button.MaterialButton
+                style="@style/PayeeDefaultButton"
+                android:layout_width="wrap_content"
+                android:text="@string/cash_2000"
+                android:textSize="20sp"
+                android:background="@null"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                android:layout_marginTop="24dp"
+                android:id="@+id/withdraw_2000"
+                app:layout_constraintTop_toBottomOf="@+id/withdraw_1000"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <com.google.android.material.button.MaterialButton
+                style="@style/PayeeDefaultButton"
+                android:layout_width="wrap_content"
+                android:text="@string/cash_5000"
+                android:textSize="20sp"
+                android:background="@null"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintVertical_chainStyle="packed"
+                android:layout_height="wrap_content" android:id="@+id/withdraw_5000"
+                app:layout_constraintBottom_toTopOf="@+id/withdraw_10000"/>
+
+        <com.google.android.material.button.MaterialButton
+                style="@style/PayeeDefaultButton"
+                android:layout_width="wrap_content"
+                android:text="@string/cash_10000"
+                android:textSize="20sp"
+                android:background="@null"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/withdraw_5000"
+                android:layout_height="wrap_content" android:id="@+id/withdraw_10000"
+                app:layout_constraintBottom_toTopOf="@+id/withdraw_20000"/>
+
+        <com.google.android.material.button.MaterialButton
+                style="@style/PayeeDefaultButton"
+                android:layout_width="wrap_content"
+                android:text="@string/cash_20000"
+                android:textSize="20sp"
+                android:background="@null"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                android:id="@+id/withdraw_20000"
+                android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/withdraw_10000"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
